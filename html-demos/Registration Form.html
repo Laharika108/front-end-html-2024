@@ -5,7 +5,7 @@
 </head>
 <body>
     <h3>REGISTRATION FORM</h3>
-    <form action="" method=""></form>
+    <form action="" method="get">
 
     <table>
         <tr>
@@ -46,6 +46,70 @@
         </td>
         </tr>
         <tr>
+            
+            <td>Email</td>
+            <td>:</td>
+            <td>
+                <input 
+                type="email" 
+                id="email" 
+                placeholder="Enter email" 
+                >
+            </td>
+        </tr>
+        <tr>
+            <td><label for="mana">Manager</label></td>
+            <td>:</td>
+            <td><input 
+                type="text"
+                id="mana"
+                name="manager"
+                value="BOSS"
+                readonly>
+        </td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td>:</td>
+            <td>
+                <input type="checkbox" id="draw" name="hobby1" value="drawing"/>
+                <label for="draw ">Drawing</label>
+                <input type="checkbox" id="garden" name="hobby2" value="gardening"/>
+                <label for="garden">Gardening</label>
+                <input type="checkbox" id="paint" name="hobby3" value="Painting"/>
+                <label for="paint ">Painting</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="letter ">Letter</label></td>
+            <td>:</td>
+            <td><input type="file" id="letter" name="letter"></td>
+        </tr>
+        <tr>
+            <td><label for="dob">DOB</label></td>
+            <td>:</td>
+            <td><input type="datetime-local" id="dob" name="dateOfBirth"</td>
+        </tr>
+        <tr>
+            <td>Qualification</td>
+            <td>:</td>
+            <td>
+                
+            <input list="qual" name="qualification"/>
+                <datalist id="qual">
+                <option value="10th pass"></option>
+                <option value="12th pass"></option>
+                <option value="UG"></option>
+                <option value="PG"></option>
+            </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Mobile</label></td>
+            <td>:</td>
+            <td><input type="number" id="contact" name="Mobile"</td>
+        </tr>
+        <tr>
             <td><label for="address">Address</label></td>
             <td>:</td>
             <td><textarea name="add"
@@ -56,12 +120,49 @@
             </textarea></td>
         </tr>
         <tr>
+            <td><label for="Country">Country</label></td>
+            <td>:</td>
+            <td>
+            <select id="Country" name="ctry">
+                <option>--- Select option---</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+                <option value="Japan">Japan</option>
+                <option value="Srilanka">Srilanka</option>
+                <option value="Nepal">Nepal/option>
+            </select>
+               </td>
+            
+
+            
+    
+        </tr>
+        <tr>
+            <td><label >Audio</label></td>
+            <td>:</td>
+            <td>
+                <audio controls>
+                    <source src="bird-audio.wav" type="audio/wav"/>
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td><label >video</label></td>
+            <td>:</td>
+            <td>
+                <video controls width="300px" height="200px">
+                    <source src="bird-video.mp4" type="video/mp4" />
+                </audio>
+            </td>
+        </tr>
+        <tr>
             <td><button type="submit">Register</button></td>
             <td></td>
             <td><button type="reset">Clear</button></td>
+           
         </tr>
    
     </table>
-
+</form>
 </body>
 </html>
