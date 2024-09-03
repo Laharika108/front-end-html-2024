@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+           
+            background-color: beige;
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 
+            'head head head'
+            'nav main aside'
+            'nav foot foot';
+            grid-template-columns:1fr 8fr 2fr;
+            grid-template-rows: 1fr 10fr 3fr;
+
+        }
+        Header,
+        nav,
+        main,
+        aside,
+        footer{
+            background-color: cadetblue;
+            color: white;
+            border: 1px solid white;
+        }
+        Header{
+            grid-area: head;
+        }
+        nav{
+            grid-area:nav;  
+        }
+        main{
+            grid-area: main;
+        }
+
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: foot;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>nav</nav>
+    <main>main</main>
+    <aside>aside</aside>
+    <footer>footer</footer>
+    
+</body>
+</html>
