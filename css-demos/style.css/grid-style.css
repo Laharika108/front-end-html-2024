@@ -4,11 +4,24 @@
     display: grid;
     grid-template-columns: 100px 200px 100px;
     grid-template-rows: 100px 200px 100px;
+    column-gap: 5px;
+    row-gap: 10px;
+    height: 1000px;
+    justify-content: center;
+    align-content: center;
+
 }
 .grid-item{
     background-color: green;
     color:brown;
     border: red 2px solid;
     padding: 10px;
+    
    
+}
+.item-too{
+    width: 200px;
+    height: 200px;
+    justify-self:center ;
+    align-self: center;
 }

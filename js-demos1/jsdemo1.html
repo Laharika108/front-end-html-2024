@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+    <h2>A demo to show 3 ways of displaying output using java script</h2>
+    <ol>
+        <li>console.log()</li>
+        <li>alert()</li>
+        <li>document.getElementById().innerHTML</li>
+    </ol>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <script>
+        console.log("this output is displayed on browser's console");
+        alert("this output is alerted using alert()");
+        document.getElementById("para1").innerHTML = "<b>this output is displayed usind document.getElementById('para1').innerHTML</b>"
+        document.getElementById("para2").innerText = "<b>this output is displayed usind document.getElementById('para2').innerTEXT</b>"
+    </script>
+</body>
+</html>
