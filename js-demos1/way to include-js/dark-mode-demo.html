@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function display(){
+            let chekValue = document.getElementById('dark').checked;
+            if( chekValue){
+            document.body.style.backgroundColor ="black";
+            document.body.style.color = "white";
+        }else{
+            document.body.style.backgroundColor ="white";
+            document.body.style.color = "black";
+        }
+        }
+    </script>
+   
+</head>
+<body>
+    <input type="checkbox" id="dark" onchange="display()">Dark mode
+    <h3>Demo to display the dark mode</h3>
+    
+    <div>
+        Java script is most popular programming language.
+    </div>
+    <div>
+        Java script is a dynamically typed language.
+    </div>
+    <div>
+        javascript and java both are different language .
+    </div>
+    
+</body>
+</html>

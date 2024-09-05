@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle button demo</title>
+    <script>
+        let flag=true;
+        function display(){
+            if(flag){
+                document.getElementById('head4').innerHTML='Toggle text displayed';
+                flag = false;
+            }else{
+                document.getElementById('head4').innerHTML=" ";  
+                flag = true;
+            }
+        }
+    </script>
+</head>
+<body>
+   
+    <h2>Demo to work with toggle button</h2>
+   
+    <div>
+        <button type="button" onclick="display()">ToggleOnMe</button>
+    </div>
+    <h4 id="head4"></h4>
+</body>
+</html>
