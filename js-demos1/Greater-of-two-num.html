@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function GreaterNum(){
+            let valueone = document.getElementById("n1").value;
+            //alert(valueone);
+           // document.getElementById("head4").value = "enter the number "+valueone+"";
+            let valuetwo = document.getElementById("n2").value;
+            //alert(valuetwo);
+           // document.getElementById("head4").value = "enter the number "+valuetwo+"";
+           let output;
+            if(valueone>valuetwo){
+               output = " "+valueone+" is greater than "+valuetwo+" ";
+            }else if(valuetwo>valueone){
+                output= ` ${valuetwo} is greater than ${valueone}`
+            }else{
+                output= " "+valueone+" and "+valuetwo+" are equal "
+            }
+            document.getElementById("head4").innerHTML=output;
+        }
+    
+        function erase(){
+            document.getElementById("n1").value="";
+            document.getElementById("n2").value="";
+            document.getElementById("head4").innerHTML="";
+        }
+    </script>
+    
+</head>
+<body>
+    <h4>Demo to find the greater of two numbers</h4>
+    <div>
+        <label for="n1">First Number</label>
+        <input type="text" id="n1">
+        <label for="n2">Second Number</label>
+        <input type="text" id="n2">
+    </div>
+    <div>
+        <button type="button" onclick="GreaterNum()">Find the Greater number</button>
+        <button type="button" onclick="erase()">CLEAR</button>
+    </div>
+    <div>
+        <h4 id="head4"></h4>
+
+    </div>
+</body>
+</html>

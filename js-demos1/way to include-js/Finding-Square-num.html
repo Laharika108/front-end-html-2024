@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function Squarenum(){
+            let numValue = document.getElementById("num").value;
+            let ans = numValue * numValue;
+            document.getElementById("head4").innerHTML = "the square  of "+numValue+" is "+ans+" "
+                
+            }
+            function erase(){
+                document.getElementById("num").value="";
+                document.getElementById("head4").innerHTML="";
+            }
+        
+    </script>
+   
+</head>
+<body>
+    <div>
+        <label >Enter the number</label>
+        <input type="number" id="num">
+    </div>
+    <div>
+        <button type="button" onclick="Squarenum()">Find the square of number</button>
+        <button type="reset" onclick="erase()">CLEAR</button>
+    </div>
+<div>
+    <h4 id="head4"></h4>
+</div>
+</body>
+</html>

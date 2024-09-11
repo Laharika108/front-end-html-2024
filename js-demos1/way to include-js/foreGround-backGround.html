@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>ForeGround - BackGround color</title>
+   <script>
+    function changeforecolor(){
+        let forecolorvalue = document.getElementById("fcolor").value;
+        //alert(fcolor);
+        document.body.style.color = forecolorvalue;
+    }
+    function changebackgroundcolor(){
+        let backgroundcolorvalue = document.getElementById("bcolor").value;
+        //alert(bcolor);
+        document.body.style.backgroundColor = backgroundcolorvalue;
+    }
+   </script>
+</head>
+<body>
+    <h2>Demo to change the foreground and background color</h2>
+    <div>
+        <label for="fcolor">ForeGroundColor : </label>
+        <select id="fcolor" onchange="changeforecolor()" >
+            <option>Select ForeGround color </option>
+            <option style="background-color: pink" value="pink"></option>
+            <option style="background-color: yellow" value="yellow"></option>
+            <option style="background-color: green" value="green"></option>
+            <option style="background-color: blue" value="blue"></option>
+            <option style="background-color:white" value="white"></option>
+            <option style="background-color: black" value="black"></option>
+    
+        </select>
+        <label for="bcolor">BackgroundGroundColor : </label>
+        <select id="bcolor" onchange="changebackgroundcolor()" >
+            <option>Select ForeGround color </option>
+            <option style="background-color: pink" value="pink"></option>
+            <option style="background-color: yellow" value="yellow"></option>
+            <option style="background-color: green" value="green"></option>
+            <option style="background-color: blue" value="blue"></option>
+            <option style="background-color:white" value="white"></option>
+            <option style="background-color: black" value="black"></option>
+    
+        </select>
+    </div>
+    
+</body>
+</html>
