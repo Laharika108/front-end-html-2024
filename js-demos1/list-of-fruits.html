@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let allfruits = ["apple", "banana", "orange", "pineapple", "grapes"];
+       function display(){
+        let contentInPara = "<h4> LIST OF THE FRUITS </h4><ul>"
+        for(let i=0;i<allfruits.length;i++){
+            contentInPara += "<li>"+allfruits[i]+"</li>"
+        }
+        contentInPara += "</ul>"
+        document.getElementById("para1").innerHTML=contentInPara;
+    }
+    </script>
+     <style>
+        
+        h4{
+            background-color: black;
+            color: white;
+            width: 200px;
+        }
+        ul{
+            background-color: antiquewhite;
+            width: 200px;
+        }
+        li{
+            border: 1px solid black;
+            background-color: aqua;
+        }
+    </style>
+  
+</head>
+<body>
+    <h2>Demo to display the fruits in unorder list using arrays</h2>
+    <div>
+        <button type="button" onclick="display()">click me</button>
+
+    </div>
+    <div>
+        <p id="para1"></p>
+    </div>
+</body>
+</html>

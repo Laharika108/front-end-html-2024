@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script>
+    let myNumbers = [30,40,6,5,0,23,90,45,8,1,78]
+    document.getElementById("para").value= myNumbers
+    function sortAsc(a,b){
+        return a-b
+    }
+    function sortDsc(a,b){
+        return b-a
+    }
+    function sortINAsc(){
+        myNumbers.sort(sortAsc);
+        document.getElementById("para1").innerHTML=myNumbers
+    }
+    function sortInDsc(){
+        myNumbers.sort(sortDsc);
+        document.getElementById("para2").innerHTML=myNumbers
+    }
+   </script>
+</head>
+<body>
+    <h4>Demo to show the Asecnding and desecnding order</h4>
+    <div>
+        <p id="para"></p>
+    </div>
+    <div>
+        <button type="button" onclick="sortINAsc()">Display the Ascending order</button>
+        <p id="para1"></p>
+    </div>
+    <div>
+        <button type="button" onclick="sortInDsc()">Display the desending order</button>
+        <p id="para2"></p>
+    </div>
+</body>
+</html>
