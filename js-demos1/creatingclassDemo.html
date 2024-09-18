@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h4>This is the demo to show the Creating object using classes</h4>
+    <p id="para1"></p>
+    <script>
+        class Car{
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+        }
+        const myCar1 = new Car("audi", 2012);
+        const myCar2 = new Car("XYZ", 2017);
+        document.getElementById("para1").innerHTML=
+        myCar1.name  +" "+ myCar1.year 
+        //mycar2.name +" "+ mycar2.year;
+    </script>
+
+
+    
+</body>
+</html>

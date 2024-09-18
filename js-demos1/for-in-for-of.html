@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let numbers = [20,2,34,5,6,78,23];
+        function display(){
+            let data ;
+            document.getElementById("para").innerHTML=numbers;
+            let data1 = '';
+            for(let x in numbers){
+                data1 += x + " ,";
+            }
+                document.getElementById("para1").innerHTML=data1;
+            
+                let data2 = '';
+            for(let y of numbers){
+                data2 += y + " ,";
+            }
+                document.getElementById("para2").innerHTML=data2;
+            
+        }
+       
+    </script>
+    
+</head>
+<body>
+    
+    <div>
+        <h2>Demo to show the for-in & for-of loops</h2>
+        <p id="para"></p>
+        <button type="button" onclick="display()">Display</button>
+    </div>
+    <div>
+        <h2>For-in</h2>
+        <p id="para1"></p>
+    </div>
+    <div></div>
+        <h2>For-of</h2>
+        <p id="para2"></p>
+    </div>
+</body>
+</html>

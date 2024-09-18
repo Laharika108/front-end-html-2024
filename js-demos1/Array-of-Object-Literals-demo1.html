@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        thead{
+            background-color: black;
+            
+            color: white;
+
+        }
+        tbody{
+            background-color: blanchedalmond;
+        }
+        tr:hover{
+            background-color: cadetblue;
+            color:white;
+        }
+    </style>
+    <script>
+        function DisplayAllStdDetails(){
+            let AllstudentDetails = [
+                {
+                    studentId :101,
+                    studentFirstName:"Laharika",
+                    studentLastName:"Karupalli",
+                    studentScore:80,
+
+                },
+                {
+                    studentId :102,
+                    studentFirstName:"Pawan Kumar ",
+                    studentLastName:"Peyyala",
+                    studentScore:95,
+
+                },
+                {
+                    studentId :103,
+                    studentFirstName:"Neelima ",
+                    studentLastName:"Kundrapu",
+                    studentScore:99,
+
+                },
+                
+                {
+                    studentId :101,
+                    studentFirstName:"Sindhuja",
+                    studentLastName:"Divvi",
+                    studentScore:90,
+
+                },
+                
+
+                
+            ];
+        
+        let data = `<table>
+                            <thead>
+                                    <tr>
+                                        <th>StudentId</th>
+                                        <th>StudentFirstName</th>
+                                        <th>StudentLastName</th>
+                                        <th>StudentScore</th>
+                                    </tr>
+                            </thead>
+                    <tbody>`;
+        for(let eachStudent of AllstudentDetails){
+             data += `<tr>
+                     <td>${eachStudent.studentId}</td>
+                        <td>${eachStudent.studentFirstName}</td>
+                        <td>${eachStudent.studentLastName}</td>
+                        <td>${eachStudent.studentScore}</td>
+                    </tr>`;
+
+           }
+           data += `</tdoby></table>`;
+           document.getElementById("para1").innerHTML=data;
+        }
+    </script>
+   
+</head>
+<body>
+    <h2>Demo to show the array of object Literals</h2>
+    <div>
+        <button type="button" onclick="DisplayAllStdDetails()">
+            DisplayAllStdDetails
+        </button>
+        <p id="para1"></p>
+    </div>
+</body>
+</html>

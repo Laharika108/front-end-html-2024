@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h4>Demo to show the what else we can include in class rather than constructor</h4>
+    <p id="para1"></p>
+    <script>
+        class Car{
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+            age(){
+                const date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+        const myCar = new Car("Ford", 2012);
+        document.getElementById("para1").innerHTML= `My Car age is ${myCar.age()} years old`
+    </script>
+   
+</body>
+</html>

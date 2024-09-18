@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <script>
+    function display() {
+        let studentDetails = {
+            studentId :101,
+            studetntFisrtName:"Laharika",
+            studentLastName:"Karupalli",
+            studentScore :95,
+
+        };
+    
+            document.getElementById("para1").innerHTML="<div>"
+            document.getElementById("para1").innerHTML +=`The student's Id is ${studentDetails.studentId}</div>`;
+            document.getElementById("para1").innerHTML += `<div>The students FirstName ${studentDetails.studentFirst}</div>`;
+            document.getElementById("para1").innerHTML += `<div>The students LastName ${studentDetails.studentLastName}</div>`;
+            document.getElementById("para1").innerHTML += `<div>The students Score ${studentDetails.studentScore}`;
+            }
+            
+   </script>
+</head>
+<body>
+    <h2>Demo to show the object Literals</h2>
+    <div>
+        <button type="button" onclick="display()">CLICK ME</button>                                                                                                                                                                                                                                                               
+        <p id="para1"></p>
+</div>        
+</body>
+</html>

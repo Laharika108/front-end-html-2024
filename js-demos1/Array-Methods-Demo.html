@@ -3,7 +3,7 @@
 <head>
    <script>
     let myNumbers = [30,40,6,5,0,23,90,45,8,1,78]
-    document.getElementById("para").value= myNumbers
+   
     function sortAsc(a,b){
         return a-b
     }
@@ -13,10 +13,45 @@
     function sortINAsc(){
         myNumbers.sort(sortAsc);
         document.getElementById("para1").innerHTML=myNumbers
+        document.getElementById("para2").innerHTML="";
+        document.getElementById("para3").innerHTML="";
+        document.getElementById("para4").innerHTML="";
     }
     function sortInDsc(){
         myNumbers.sort(sortDsc);
         document.getElementById("para2").innerHTML=myNumbers
+        document.getElementById("para3").innerHTML="";
+        document.getElementById("para1").innerHTML="";
+        document.getElementById("para4").innerHTML="";
+    }
+    function rotateForward(){
+        let lastItem = myNumbers[myNumbers.length-1];
+        for(let i=myNumbers.length-1;i>=0;i--){
+            if(i==0){
+                 myNumbers[0] =lastItem;
+                break;
+            }
+            myNumbers[i]=myNumbers[i-1]
+        }
+        document.getElementById("para3").innerHTML=myNumbers;
+        document.getElementById("para2").innerHTML="";
+        document.getElementById("para1").innerHTML="";
+        document.getElementById("para4").innerHTML="";
+
+    }
+    function rotateBackward(){
+        let firstItem = myNumbers[0];
+        for(let i=0;i<myNumbers.length;i++){
+            if(i==myNumbers.length-1){
+                myNumbers[myNumbers.length-1]=firstItem;
+                break;
+            }
+            myNumbers[i]=myNumbers[i+1]
+        }
+        document.getElementById("para4").innerHTML=myNumbers;
+        document.getElementById("para2").innerHTML="";
+        document.getElementById("para1").innerHTML="";
+        document.getElementById("para3").innerHTML="";
     }
    </script>
 </head>
@@ -33,5 +68,16 @@
         <button type="button" onclick="sortInDsc()">Display the desending order</button>
         <p id="para2"></p>
     </div>
+    <div>
+        <button type="button" onclick="rotateForward()">RotateForword</button>
+        <p id="para3"></p>
+    </div>
+    <div>
+        <button type="button" onclick="rotateBackward()">RotateBackward</button>
+        <p id="para4"></p>
+    </div>
+    <script>
+         document.getElementById("para").innerHTML= myNumbers
+    </script>
 </body>
 </html>
